@@ -1,155 +1,972 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>1337</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><style>@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap);*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif}body{background-color:#0f0f13;color:#f5f5f5;overflow-x:hidden}.particles{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}.container{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:5px}.card{background:rgba(25,25,35,.8);backdrop-filter:blur(10px);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.5);width:95%;max-width:450px;overflow:hidden;opacity:0;animation:fadeIn 1s forwards .5s}.profile{padding:15px 15px 10px;text-align:center}.avatar{width:100px;height:100px;border-radius:50%;margin:0 auto 15px;border:3px solid #8a2be2;padding:5px;position:relative;overflow:hidden;animation:pulseAvatar 3s infinite}.avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}.profile h1{font-size:24px;font-weight:700;margin-bottom:3px;background:linear-gradient(90deg,#8a2be2,#ff6b81);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:colorChange 5s infinite alternate}.profile h2{font-size:14px;font-weight:400;color:#bbb;margin-bottom:10px;opacity:0;animation:fadeIn 1s forwards 1s}.rent-button{display:inline-block;margin:15px auto;padding:12px 24px;background:linear-gradient(45deg,#ff6b81,#8a2be2);border:none;border-radius:25px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;transition:all .4s ease;box-shadow:0 5px 15px rgba(138,43,226,.5);position:relative;overflow:hidden;font-size:16px;z-index:1;animation:pulseButton 2s infinite,fadeIn 1s forwards 2.2s;opacity:0;text-decoration:none}.rent-button:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 10px 25px rgba(138,43,226,.7)}.rent-button:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,#8a2be2,#ff6b81);z-index:-1;transition:transform .6s cubic-bezier(.5,0,.5,1);transform:scaleX(0);transform-origin:right}.rent-button:hover:before{transform:scaleX(1);transform-origin:left}.rent-button:after{content:'';position:absolute;width:30px;height:100%;top:0;left:-100px;background:rgba(255,255,255,.3);transform:skewX(-25deg);transition:all .6s ease}.rent-button:hover:after{left:100%}.menu{display:flex;justify-content:center;margin-bottom:15px;opacity:0;animation:fadeIn 1s forwards 2s}.content{padding:0 15px 10px}.content-section{opacity:0;transform:translateY(10px);animation:showContent .5s forwards}.social-links{display:flex;justify-content:center;flex-wrap:wrap;margin:15px 0}.social-link{display:inline-flex;align-items:center;justify-content:center;width:45px;height:45px;margin:6px;border-radius:50%;background:rgba(138,43,226,.2);color:#fff;font-size:18px;text-decoration:none;transition:all .3s ease;position:relative;overflow:hidden;z-index:1}.social-link:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,#8a2be2,#ff6b81);z-index:-1;transform:scale(0);transition:transform .4s cubic-bezier(.5,0,.5,1);border-radius:50%}.social-link:hover:before{transform:scale(1)}.social-link:hover{transform:translateY(-3px);box-shadow:0 8px 15px rgba(138,43,226,.3)}.footer{margin-top:15px;font-size:13px;color:#888;text-align:center;opacity:0;animation:fadeIn 1s forwards 2.5s}.language-switcher{position:absolute;top:15px;right:15px;z-index:10}.lang-btn{background:rgba(138,43,226,.2);color:#fff;border:none;border-radius:50px;padding:6px 12px;font-size:14px;cursor:pointer;transition:all .3s ease;backdrop-filter:blur(5px)}.lang-btn:hover{background:rgba(138,43,226,.4)}@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}@keyframes pulseAvatar{0%{box-shadow:0 0 0 0 rgba(138,43,226,.7)}70%{box-shadow:0 0 0 10px rgba(138,43,226,0)}100%{box-shadow:0 0 0 0 rgba(138,43,226,0)}}@keyframes pulseButton{0%{box-shadow:0 0 0 0 rgba(255,107,129,.7)}70%{box-shadow:0 0 0 15px rgba(255,107,129,0)}100%{box-shadow:0 0 0 0 rgba(255,107,129,0)}}@keyframes colorChange{0%{background-position:0 50%}100%{background-position:100% 50%}}@keyframes showContent{to{opacity:1;transform:translateY(0)}}.skills{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;margin-bottom:15px}.skill{padding:6px 12px;margin:4px;border-radius:20px;background:rgba(138,43,226,.2);font-size:13px;transition:all .3s ease}.skill:hover{background:rgba(138,43,226,.4);transform:translateY(-2px)}.section-title{margin:15px 0 8px;color:#8a2be2;font-size:18px;text-align:center}.divider{height:2px;width:40px;background:linear-gradient(90deg,#8a2be2,#ff6b81);margin:10px auto 12px}.lang-content{transition:opacity .5s ease,transform .5s ease}.hidden{display:none;opacity:0}.visible{display:block;opacity:1}@media (max-width:500px){.avatar{width:90px;height:90px}.profile h1{font-size:22px}.rent-button{padding:10px 20px;font-size:14px}}</style></head><body><div id="particles-js" class="particles"></div><div class="language-switcher"><button class="lang-btn" id="toggleLang">EN / RU</button></div><div class="container"><div class="card"><div class="profile"><div class="avatar"><img src="https://i.ibb.co/nMMLqTHp/2V.jpg" alt="Фото профиля"></div><h1><b>addfix</b></h1><h2>17 y.o<br>Developer</h2><div class="menu"></div><div class="content"><div class="content-section"><h3 class="section-title" id="skills-title-ru">Навыки</h3><h3 class="section-title hidden" id="skills-title-en">Skills</h3><div class="divider"></div><div class="skills"><div class="skill">Python</div><div class="skill">SE</div><div class="skill">PC</div></div></div><div class="content-section"><h3 class="section-title" id="contact-title-ru">Связаться со мной</h3><h3 class="section-title hidden" id="contact-title-en">Contact me</h3><div class="divider"></div><div class="social-links"><a href="https://t.me/addfix" class="social-link" target="_blank"><i class="fab fa-telegram-plane"></i></a><a href="https://github.com/addfixx" class="social-link" target="_blank"><i class="fab fa-github"></i></a></div><div class="footer" id="footer-ru">© 2025 addfix. Все права защищены.</div><div class="footer hidden" id="footer-en">© 2025 addfix. All rights reserved.</div><a href="https://t.me/mayberent" class="rent-button" id="rent-button-ru">@юзернеймы</a><a href="https://t.me/mayberent" class="rent-button hidden" id="rent-button-en">@usernames</a></div></div></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script><script>// Инициализация фоновых частиц
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 80,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#8a2be2"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#8a2be2",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 2,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 140,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-
-        // Переключение языка
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleBtn = document.getElementById('toggleLang');
-            let isRussian = true;
-
-            function updateLanguage() {
-                const ruElements = document.querySelectorAll('[id$="-ru"]');
-                const enElements = document.querySelectorAll('[id$="-en"]');
-
-                if (isRussian) {
-                    // Показать русские элементы, скрыть английские
-                    ruElements.forEach(el => {
-                        el.classList.remove('hidden');
-                        el.classList.add('visible');
-                    });
-
-                    enElements.forEach(el => {
-                        el.classList.remove('visible');
-                        el.classList.add('hidden');
-                    });
-
-                    document.documentElement.lang = 'ru';
-                    toggleBtn.textContent = 'EN / RU';
-                } else {
-                    // Показать английские элементы, скрыть русские
-                    enElements.forEach(el => {
-                        el.classList.remove('hidden');
-                        el.classList.add('visible');
-                    });
-
-                    ruElements.forEach(el => {
-                        el.classList.remove('visible');
-                        el.classList.add('hidden');
-                    });
-
-                    document.documentElement.lang = 'en';
-                    toggleBtn.textContent = 'RU / EN';
-                }
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>addfix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --primary: #ffffff;
+      --secondary: #888888;
+      --accent: #333333;
+      --bg-dark: #0a0a0a;
+      --bg-card: rgba(18, 18, 18, 0.8);
+      --gradient-dark: linear-gradient(135deg, #000000, #333333);
+      --gradient-light: linear-gradient(135deg, #ffffff, #888888);
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.4);
+      --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    body {
+      background-color: var(--bg-dark);
+      color: var(--primary);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+    
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(15px);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      width: 95%;
+      max-width: 500px;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeUp 1.2s forwards 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+    
+    .card:before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: var(--gradient-dark);
+      z-index: -1;
+      border-radius: 28px;
+      opacity: 0.5;
+      filter: blur(20px);
+    }
+    
+    .profile {
+      padding: 30px 25px 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .profile-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: var(--gradient-dark);
+      z-index: 0;
+    }
+    
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      border: 3px solid var(--primary);
+      padding: 5px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      animation: pulseAvatar 4s infinite alternate;
+      box-shadow: var(--shadow-soft);
+    }
+    
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      filter: grayscale(100%);
+      transition: var(--transition-smooth);
+    }
+    
+    .avatar:hover img {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+    
+    .profile h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 3px;
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      letter-spacing: 1px;
+    }
+    
+    .profile h1::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      background: var(--gradient-light);
+      border-radius: 2px;
+      transform: scaleX(0.7);
+      transform-origin: center;
+      transition: var(--transition-smooth);
+    }
+    
+    .profile h1:hover::after {
+      transform: scaleX(1);
+    }
+    
+    .profile h2 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--secondary);
+      margin-bottom: 16px;
+      opacity: 0;
+      animation: fadeIn 1s forwards 1s;
+      letter-spacing: 0.5px;
+    }
+    
+    .rent-button {
+      display: inline-block;
+      margin: 20px auto 5px;
+      padding: 14px 30px;
+      background: var(--gradient-dark);
+      border: none;
+      border-radius: 30px;
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+      font-size: 16px;
+      z-index: 1;
+      animation: pulseButton 3s infinite alternate, fadeIn 1s forwards 2.2s;
+      opacity: 0;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    
+    .rent-button:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: var(--shadow-strong);
+      letter-spacing: 3px;
+    }
+    
+    .rent-button:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-light);
+      z-index: -1;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+    
+    .rent-button:hover:before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    
+    .rent-button:hover {
+      color: var(--bg-dark);
+    }
+    
+    .rent-button:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 100%;
+      top: 0;
+      left: -100px;
+      background: rgba(255, 255, 255, 0.3);
+      transform: skewX(-25deg);
+      transition: var(--transition-smooth);
+    }
+    
+    .rent-button:hover:after {
+      left: 100%;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      opacity: 0;
+      animation: fadeIn 1s forwards 2s;
+    }
+    
+    .content {
+      padding: 10px 25px 25px;
+    }
+    
+    .content-section {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: showContent 0.8s forwards;
+      position: relative;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      gap: 15px;
+    }
+    
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--primary);
+      font-size: 20px;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .social-link:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-light);
+      z-index: -1;
+      transform: scale(0);
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      border-radius: 50%;
+    }
+    
+    .social-link:hover:before {
+      transform: scale(1);
+    }
+    
+    .social-link:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: var(--shadow-soft);
+    }
+    
+    .social-link:hover i {
+      color: var(--bg-dark);
+    }
+    
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--secondary);
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s forwards 2.5s;
+      letter-spacing: 0.5px;
+    }
+    
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+    }
+    
+    .lang-btn {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      backdrop-filter: blur(10px);
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    
+    .lang-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-soft);
+    }
+    
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+    }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes pulseAvatar {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+      }
+      50% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
+    }
+    
+    @keyframes pulseButton {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
+    }
+    
+    @keyframes showContent {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 15px 0;
+      gap: 10px;
+    }
+    
+    .skill {
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 14px;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .skill:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: var(--shadow-soft);
+    }
+    
+    .skill:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      background: var(--gradient-light);
+      z-index: -1;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+    
+    .skill:hover:before {
+      opacity: 0.5;
+    }
+    
+    .section-title {
+      margin: 25px 0 15px;
+      color: var(--primary);
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gradient-light);
+    }
+    
+    .divider {
+      height: 1px;
+      width: 60px;
+      background: var(--gradient-light);
+      margin: 15px auto 20px;
+      position: relative;
+    }
+    
+    .divider:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .lang-content {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .hidden {
+      display: none;
+      opacity: 0;
+    }
+    
+    .visible {
+      display: block;
+      opacity: 1;
+    }
+    
+    .glitch-effect {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .glitch-effect:before, .glitch-effect:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+    
+    .glitch-effect:before {
+      color: #0ff;
+      z-index: -1;
+      animation: glitch-effect 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+      animation-delay: 0.1s;
+    }
+    
+    .glitch-effect:after {
+      color: #f0f;
+      z-index: -2;
+      animation: glitch-effect 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+      animation-delay: 0.15s;
+    }
+    
+    @keyframes glitch-effect {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+    
+    .mouse-effect {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    @media (max-width: 500px) {
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .profile h1 {
+        font-size: 26px;
+      }
+      
+      .rent-button {
+        padding: 12px 24px;
+        font-size: 14px;
+      }
+      
+      .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+      }
+      
+      .section-title {
+        font-size: 18px;
+      }
+      
+      .skill {
+        padding: 6px 12px;
+        font-size: 13px;
+      }
+    }
+    
+    /* Loading screen */
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .loading-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      border-top-color: var(--primary);
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    
+    .loading-text {
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--primary);
+      position: relative;
+    }
+    
+    .loading-text:after {
+      content: '...';
+      position: absolute;
+      animation: dots 2s infinite;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes dots {
+      0%, 20% {
+        content: '.';
+      }
+      40%, 60% {
+        content: '..';
+      }
+      80%, 100% {
+        content: '...';
+      }
+    }
+    
+    /* Scroll animations */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      animation: fadeIn 1s forwards 3s;
+    }
+    
+    .scroll-indicator-icon {
+      width: 30px;
+      height: 50px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 25px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .scroll-indicator-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      animation: scrollDown 2s infinite;
+    }
+    
+    @keyframes scrollDown {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      80% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+    }
+    
+    /* Noise effect */
+    .noise {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPUlEQVR4nO3ZrU7DYBQGYAb3Hwogq6cmoY3gHhi8zcG4A+ABJoZjCEgqEBhwkMAgwUxSg6Sm3oXj2LN/XvMkJuc9+fq1TfNNlhnjWq0b38cbfuLcA57iJR7iPPF+g9fYn6VEK17gW+L9Em+jV4lV5aS6y4wQh3EWvUncxdMFwhP8jl4lxniGwwVijPeHn1Y3/+p83uNVHPl6daPbXE+Jj3iMd7jK5f5YYhw/zfElVvGnxCdscIL9+P85flvGkTH+4DSexDcT8TJ+WcaRZTQ+4ja+6sSP2tVW6xKptkD9pD3fXuKqrS2xNu3FzZGLKXa1Y2Tv11dJUKJEiRIlSpQoUaJEiTQowV+gJUqUKFGiRIkSJUqUKLFFCf4CLVGiRIkSJUqUKFGiRIktSvAXaIkSJUqUKFGixConVulqZ+tOJuMvX/Jlf7R7gH0AAAAASUVORK5CYII=");
+      opacity: 0.03;
+      z-index: 9998;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="mouseEffect" class="mouse-effect"></div>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loader"></div>
+      <div class="loading-text">Loading</div>
+    </div>
+  </div>
+  
+  <div id="particles-js" class="particles"></div>
+  
+  <div class="language-switcher">
+    <button class="lang-btn" id="toggleLang">EN / RU</button>
+  </div>
+  
+  <div class="container">
+    <div class="card">
+      <div class="profile">
+        <div class="profile-bg"></div>
+        <div class="avatar">
+          <img src="https://i.ibb.co/nMMLqTHp/2V.jpg" alt="Profile Photo">
+        </div>
+        <h1 class="glitch-effect" data-text="addfix">addfix</h1>
+        <h2>17 y.o<br>Developer</h2>
+        <div class="menu"></div>
+        <div class="content">
+          <div class="content-section">
+            <h3 class="section-title" id="skills-title-ru">Навыки</h3>
+            <h3 class="section-title hidden" id="skills-title-en">Skills</h3>
+            <div class="divider"></div>
+            <div class="skills">
+              <div class="skill">Python</div>
+              <div class="skill">SE</div>
+              <div class="skill">PC</div>
+            </div>
+          </div>
+          <div class="content-section">
+            <h3 class="section-title" id="contact-title-ru">Связаться со мной</h3>
+            <h3 class="section-title hidden" id="contact-title-en">Contact me</h3>
+            <div class="divider"></div>
+            <div class="social-links">
+              <a href="https://t.me/addfix" class="social-link" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="https://github.com/addfixx" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="footer" id="footer-ru">© 2025 addfix. Все права защищены.</div>
+            <div class="footer hidden" id="footer-en">© 2025 addfix. All rights reserved.</div>
+            <a href="https://t.me/mayberent" class="rent-button" id="rent-button-ru">@юзернеймы</a>
+            <a href="https://t.me/mayberent" class="rent-button hidden" id="rent-button-en">@usernames</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-icon">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Loading screen
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+          loadingScreen.style.visibility = 'hidden';
+        }, 500);
+      }, 1500);
+    });
+    
+    // Mouse follow effect
+    document.addEventListener('mousemove', function(e) {
+      const mouseEffect = document.getElementById('mouseEffect');
+      mouseEffect.style.opacity = '1';
+      mouseEffect.style.left = e.clientX + 'px';
+      mouseEffect.style.top = e.clientY + 'px';
+    });
+    
+    // Initialize particles
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.3,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.5
             }
-
-            toggleBtn.addEventListener('click', function () {
-                isRussian = !isRussian;
-                updateLanguage();
-            });
-
-            // Инициализация языка при загрузке
-            updateLanguage();
-        });</script></body></html>
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    
+    // Language switching
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.getElementById('toggleLang');
+      let isRussian = true;
+      
+      function updateLanguage() {
+        const ruElements = document.querySelectorAll('[id$="-ru"]');
+        const enElements = document.querySelectorAll('[id$="-en"]');
+        
+        if (isRussian) {
+          // Show Russian elements, hide English
+          ruElements.forEach(el => {
+            el.classList.remove('hidden');
+            el.classList.add('visible');
+          });
+          
+          enElements.forEach(el => {
+            el.classList.remove('visible');
+            el.classList.add('hidden');
+          });
+          
+          document.documentElement.lang = 'ru';
+          toggleBtn.textContent = 'EN / RU';
+        } else {
+          // Show English elements, hide Russian
+          enElements.forEach(el => {
+            el.classList.remove('hidden');
+            el.classList.add('visible');
+          });
+          
+          ruElements.forEach(el => {
+            el.classList.remove('visible');
+            el.classList.add('hidden');
+          });
+          
+          document.documentElement.lang = 'en';
+          toggleBtn.textContent = 'RU / EN';
+        }
+      }
+      
+      toggleBtn.addEventListener('click', function() {
+        isRussian = !isRussian;
+        updateLanguage();
+      });
+      
+      // Initialize with Russian language
+      updateLanguage();
+    });
+    
+    // Apply animation to content sections
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.content-section');
+      
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].style.animationDelay = (1.2 + i * 0.3) + 's';
+      }
+    });
+    
+    // Glitch effect on hover
+    document.addEventListener('DOMContentLoaded', function() {
+      const title = document.querySelector('h1.glitch-effect');
+      
+      title.addEventListener('mouseover', function() {
+        this.classList.add('active-glitch');
+      });
+      
+      title.addEventListener('mouseout', function() {
+        this.classList.remove('active-glitch');
+      });
+    });
+  </script>
+</body>
+</html>
